@@ -1,0 +1,18 @@
+void insert(int a[], int n)
+{  
+    int i,value;
+    int temp;
+     for(i=1;i<n;i++)
+     {
+         value=a[i];
+         temp=i;
+         while(temp>0 && a[temp-1]>value)
+         {
+             a[temp]=a[temp-1];
+             temp=temp-1;
+         }
+         a[temp]=value;
+     }
+     
+                                              
+}
